@@ -6,6 +6,10 @@ $(document).ready(function () {
         setTimeout(function () {
             alert("O valor não pode ser menor que 0");
         }, 300);
+
+        if (media < 0) {
+            window.document.getElementById("mediaGeral").value = "";
+        }
     }
 
     $(document).on('click', '.addLinha', function () {
@@ -60,7 +64,7 @@ $(document).ready(function () {
             }
         });
 
-        var media = quantidadeNotas > 0 ? (totalNotas / quantidadeNotas).toFixed(2) : '. . .';
+        var media = quantidadeNotas > 0 ? (totalNotas / quantidadeNotas).toFixed(2) : '';
 
         var ColorMedia = window.document.getElementById("mediaGeral");
 
