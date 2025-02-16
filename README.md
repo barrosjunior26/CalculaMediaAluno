@@ -1,2 +1,2 @@
 # CalculaMediaAluno
-Programa básico para calcular a média de um aluno
+Programa básico usando HTML e JavaScript para calcular a média de um aluno
